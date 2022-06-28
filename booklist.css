@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bitter&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* webpage-colors */
+  --color-one: #272a31;
+  --color-two: #ec5242;
+  --color-two-trans: #ec5342f4;
+
+  /* webpage-fonts */
+  --font-one: 'Alfa Slab One', cursive;
+  --font-two: 'Bitter', serif;
+}
