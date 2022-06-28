@@ -27,7 +27,7 @@ function showBookList(index) {
   btitle.textContent = bookArr[index].title;
   bookInfo.appendChild(btitle);
 
-  const author = document.createElement('h3');
+  const author = document.createElement('h2');
   author.textContent = bookArr[index].author;
   bookInfo.appendChild(author);
 
@@ -38,7 +38,7 @@ function showBookList(index) {
   listContainer.appendChild(bookInfo); 
 
   removeBtn.addEventListener('click', () => {
-    bookArr.filter(book => bookArr.indexOf(book));
+    bookArr.splice(index, 1);
     listContainer.removeChild(bookInfo);
     localStorage.setItem('books', JSON.stringify(bookArr));
   })
@@ -54,7 +54,7 @@ addBtn.addEventListener('click', (e) => {
   aInput.value = '';
   let addBook = new createBook(booktitle, authorName);
   bookArr.push(addBook);
-  showBookList(bookArr.length-1)
+  showBookList(bookArr.length-1);
   e.preventDefault();
   localStorage.setItem('books', JSON.stringify(bookArr)); 
 })
