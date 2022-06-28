@@ -1,18 +1,14 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+![](https://img.shields.io/badge/Microverse-blueviolet) ![](https://img.shields.io/badge/-HTML-orange) ![](https://img.shields.io/badge/-CSS-blue) ![](https://img.shields.io/badge/-JavaScript-yellow)
 
-# Project
-> About this project.
+# Awesome Books
+> A basic app project built with HTML, CSS and JS to keep track of awesome books.
 
 
 ## Built With
 
-- **HTML & CSS best practices:** Correct use of tags, elements, properties and syntax.
+- **HTML/CSS & JS best practices:** Correct use of tags, elements, properties and syntax.
 - **GitHub flow:**  Correct use of Branches for deployment and features development.
 - **Linters Check:** Local and Pull Request check for errors, bugs and stylistic errors in code.
-
-## Live Demo 
-
-[Live Demo Link](https://raminka13.github.io/M1-Portfolio/)
 
 ## Authors
 
@@ -22,17 +18,18 @@
 - Twitter: [@raminka13](https://twitter.com/raminka13)
 - LinkedIn: [Raul Ospina](http://linkedin.com/in/raul-ospina-83232614)
 
+👤 **Karla Delgado**
 
-## Collaborators
-
-- [Name](URL)
-- [Name](URL)
+- GitHub: [@karlavdelgadof](https://github.com/karlavdelgadof)
+- Twitter: [@karlavdelgadof](https://twitter.com/karlavdelgadof)
+- LinkedIn: [Karla Delgado](https://www.linkedin.com/in/karla-delgado-613a32239/)
 
 
 ## Project Milestones
 
-
-- Milestone 1
+- Milestone 1: Manage books collection (plain JS with objects). 
+- Milestone 2: Manage books collection (plain JS with classes) and add basic CSS.
+- Milestone 3: Create a complete website with navigation.
 
 
 ## Show your support
