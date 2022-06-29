@@ -24,11 +24,11 @@ class UI {
     const bookInfo = document.createElement('div');
     bookInfo.className = 'book';
 
-    const btitle = document.createElement('h2');
+    const btitle = document.createElement('h3');
     btitle.textContent = book.title;
     bookInfo.appendChild(btitle);
 
-    const author = document.createElement('h2');
+    const author = document.createElement('h3');
     author.textContent = ` by ${book.author} `;
     bookInfo.appendChild(author);
 
@@ -119,4 +119,33 @@ document.querySelector('#book-list').addEventListener('click', (e) => {
 
   // Remove book from Storage
   Storage.removeBook(e.target.parentElement.firstChild.textContent);
+});
+
+// Event for SPA functionality
+
+document.getElementById('list-btn').addEventListener('click', () => {
+  document.getElementById('list').classList.add('show');
+  document.getElementById('add').classList.remove('show');
+  document.getElementById('contact').classList.remove('show');
+  document.getElementById('list-btn').classList.add('active');
+  document.getElementById('add-btn').classList.remove('active');
+  document.getElementById('contact-btn').classList.remove('active');
+});
+
+document.getElementById('add-btn').addEventListener('click', () => {
+  document.getElementById('add').classList.add('show');
+  document.getElementById('list').classList.remove('show');
+  document.getElementById('contact').classList.remove('show');
+  document.getElementById('add-btn').classList.add('active');
+  document.getElementById('list-btn').classList.remove('active');
+  document.getElementById('contact-btn').classList.remove('active');
+});
+
+document.getElementById('contact-btn').addEventListener('click', () => {
+  document.getElementById('contact').classList.add('show');
+  document.getElementById('add').classList.remove('show');
+  document.getElementById('list').classList.remove('show');
+  document.getElementById('contact-btn').classList.add('active');
+  document.getElementById('add-btn').classList.remove('active');
+  document.getElementById('list-btn').classList.remove('active');
 });
