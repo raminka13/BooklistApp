@@ -10,6 +10,10 @@
 - **GitHub flow:**  Correct use of Branches for deployment and features development.
 - **Linters Check:** Local and Pull Request check for errors, bugs and stylistic errors in code.
 
+## Live Demo :arrow_forward:
+
+[Awesome Books SPA](https://raminka13.github.io/BooklistApp/)
+
 ## Authors
 
 👤 **Raul A Ospina**
@@ -27,9 +31,9 @@
 
 ## Project Milestones
 
-- Milestone 1: Manage books collection (plain JS with objects). 
-- Milestone 2: Manage books collection (plain JS with classes) and add basic CSS.
-- Milestone 3: Create a complete website with navigation.
+- Milestone 1: Manage books collection (plain JS with objects). :heavy_check_mark:
+- Milestone 2: Manage books collection (plain JS with classes) and add basic CSS. :heavy_check_mark:
+- Milestone 3: Create a complete website with navigation. :hammer_and_wrench:
 
 
 ## Show your support
