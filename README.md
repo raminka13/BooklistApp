@@ -33,7 +33,7 @@
 
 - Milestone 1: Manage books collection (plain JS with objects). :heavy_check_mark:
 - Milestone 2: Manage books collection (plain JS with classes) and add basic CSS. :heavy_check_mark:
-- Milestone 3: Create a complete website with navigation. :hammer_and_wrench:
+- Milestone 3: Create a complete website with navigation. :heavy_check_mark:
 
 
 ## Show your support
