@@ -1,3 +1,7 @@
+/* eslint-disable max-classes-per-file */
+
+/* eslint no-use-before-define: ["error", { "classes": false }] */
+
 // Book class constructor
 class Book {
   constructor(title, author) {
