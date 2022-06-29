@@ -24,6 +24,7 @@ body {
   background-blend-mode: soft-light;
   background-image: url('./multimedia/bg.jpg');
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   backdrop-filter: blur(10px);
 }
