@@ -2,7 +2,104 @@
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#app {
+  padding: 10em 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 60%;
+}
+
+#app h1 {
+  padding: 0;
+  margin: 1rem 0;
+  width: 80%;
+  text-align: center;
+  font-size: 3em;
+}
+
+div#book-list {
+  width: 80%;
+  border: 2px solid #555;
+}
+
+div#book-list .book:nth-child(2n+2) {
+  background-color: #eee;
+}
+
+div.book {
+  display: flex;
+  width: 100%;
+  height: 3em;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ccc;
+  font-size: 0.5em;
+}
+
+.book h2 + h2 {
+  font-style: italic;
+  font-weight: 400;
+}
+
 .remove-btn {
-  padding: 5px;
+  cursor: pointer;
+  padding: 0.25em 0.5em;
+  margin: 0;
+  background-color: #333;
+  color: #eee;
+  font-size: 1.25em;
+}
+
+.remove-btn:hover {
+  background-color: red;
+}
+
+#book-form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#book-form input {
+  width: 90%;
+  margin: 0.5em 0 0;
+  padding: 0;
+  border: 3px solid #333;
+  font-size: 1.5em;
+}
+
+#book-form h2 {
+  padding: 0;
+  margin: 1em 0 0.2em;
+}
+
+#book-form input:focus {
+  border: 3px solid #245bb5;
+}
+
+#book-form button {
+  width: 50px;
+  align-self: flex-end;
+  cursor: pointer;
+  padding: 0.25em 0.5em;
   margin: 1em;
+  background-color: #333;
+  color: #eee;
+  font-size: 1em;
+}
+
+#book-form button:hover {
+  background-color: #245bb5;
 }
