@@ -120,3 +120,23 @@ document.querySelector('#book-list').addEventListener('click', (e) => {
   // Remove book from Storage
   Storage.removeBook(e.target.parentElement.firstChild.textContent);
 });
+
+// Event for SPA functionality
+
+document.getElementById('list-btn').addEventListener('click', () => {
+  document.getElementById('list').classList.add('show');
+  document.getElementById('add').classList.remove('show');
+  document.getElementById('contact').classList.remove('show');
+})
+
+document.getElementById('add-btn').addEventListener('click', () => {
+  document.getElementById('add').classList.add('show');
+  document.getElementById('list').classList.remove('show');
+  document.getElementById('contact').classList.remove('show');
+})
+
+document.getElementById('contact-btn').addEventListener('click', () => {
+  document.getElementById('contact').classList.add('show');
+  document.getElementById('add').classList.remove('show');
+  document.getElementById('list').classList.remove('show');
+})
