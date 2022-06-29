@@ -11,7 +11,7 @@ class UI {
   static displayBooks() {
     const books = Storage.getBooks();
 
-    books.forEach((book) => UI.addbooktoList(book))
+    books.forEach((book) => UI.addbooktoList(book));
   }
 
   static addbooktoList(book) {
@@ -25,7 +25,7 @@ class UI {
     bookInfo.appendChild(btitle);
 
     const author = document.createElement('h2');
-    author.textContent = book.author;
+    author.textContent = ` by ${book.author} `;
     bookInfo.appendChild(author);
 
     const removeBtn = document.createElement('button');
@@ -33,7 +33,6 @@ class UI {
     removeBtn.textContent = 'Remove';
     bookInfo.appendChild(removeBtn);
     list.appendChild(bookInfo);
-
   }
 
   static deleteBook(el) {
@@ -83,15 +82,14 @@ class Storage {
 document.addEventListener('DOMContentLoaded', UI.displayBooks);
 // Event to Add Book
 document.querySelector('#book-form').addEventListener('submit', (e) => {
-
   // Prevent submit
   e.preventDefault();
 
-  // Get values from the form 
+  // Get values from the form
   const title = document.getElementById('title').value;
   const author = document.getElementById('author').value;
 
-  // Validation 
+  // Validation
   if (title === '' || author === '') {
     alert('Please fill in all fields');
   } else {
@@ -115,9 +113,6 @@ document.querySelector('#book-list').addEventListener('click', (e) => {
   // Remove book from UI
   UI.deleteBook(e.target);
 
-  //Remove book from Storage
+  // Remove book from Storage
   Storage.removeBook(e.target.parentElement.firstChild.textContent);
-})
-
-
-
+});
